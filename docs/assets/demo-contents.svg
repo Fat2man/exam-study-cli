@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="512" viewBox="0 0 1040 512" role="img" aria-label="05 / 章节目录">
+<g font-family="Consolas, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans Mono CJK SC', monospace" font-size="16" xml:space="preserve">
+<g transform="translate(0 1)"><rect x="1" y="1" width="1038" height="508" rx="16" fill="#0f1b2c" stroke="#324960" stroke-width="2"/>
+    <text x="32" y="37" fill="#dce8f7" font-weight="700">05 / 章节目录</text>
+    <text x="1008" y="37" fill="#91e9d7" text-anchor="end" font-size="14">C  目录</text>
+    <path d="M1 53h1038 M32 426h976" stroke="#324960"/>
+    <text x="32" y="84" fill="#91e9d7" font-size="19" font-weight="700">数学阅读演示 · chapters</text>
+    <text x="32" y="109" fill="#aabbd1" font-size="14">OCR 未核验；公式保留 LaTeX 原文；不提供自动判分</text>
+    <rect x="32" y="127" width="976" height="285" rx="9" fill="#172840"/>
+    <text x="49" y="153" fill="#91e9d7">›     数学阅读演示</text>
+<text x="49" y="179" fill="#eef3fb">  第一讲　数与表达式</text>
+<text x="49" y="205" fill="#eef3fb">    第一节　从小数开始</text>
+<text x="49" y="231" fill="#eef3fb">          1.1 循环小数与分数</text>
+<text x="49" y="257" fill="#eef3fb">          1.3 保留原始 OCR 字符</text>
+<text x="49" y="283" fill="#eef3fb">  第二讲　整数与余数</text>
+<text x="49" y="309" fill="#eef3fb">    第一节　整数除法</text>
+<text x="49" y="335" fill="#eef3fb">          2.1 带余除法</text>
+<text x="49" y="361" fill="#eef3fb">    第二节　余数的直观理解</text>
+<text x="49" y="387" fill="#eef3fb">          2.2 整数分组练习</text>
+    <text x="32" y="448" fill="#91e9d7" font-size="14">本地阅读</text>
+<text x="32" y="469" fill="#b6c8dd" font-size="14">↑↓ 章节 · Enter 阅读 · S 搜索 · Esc 教材</text>
+<text x="32" y="490" fill="#b6c8dd" font-size="14">1/10 · 本地离线</text></g>
+</g>
+</svg>

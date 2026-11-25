@@ -53,6 +53,7 @@ node dist/cli/index.js import --legacy my-ocr.md --id my-preview --pdf my-materi
   "title": "我的逐页教材",
   "subject": "math",
   "pdf": "my-material.pdf",
+  "tier": "unknown",
   "pages": [
     { "pageNo": 1, "markdown": "pages/page-000001.md", "evidence": "与 PDF 第 1 个物理页对照得到的 OCR 输出" }
   ]

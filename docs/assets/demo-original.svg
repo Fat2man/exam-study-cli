@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="434" viewBox="0 0 1040 434" role="img" aria-label="03 / 查看原文">
+<g font-family="Consolas, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans Mono CJK SC', monospace" font-size="16" xml:space="preserve">
+<g transform="translate(0 1)"><rect x="1" y="1" width="1038" height="430" rx="16" fill="#0f1b2c" stroke="#324960" stroke-width="2"/>
+    <text x="32" y="37" fill="#dce8f7" font-weight="700">03 / 查看原文</text>
+    <text x="1008" y="37" fill="#91e9d7" text-anchor="end" font-size="14">R  原文与校订</text>
+    <path d="M1 53h1038 M32 348h976" stroke="#324960"/>
+    <text x="32" y="84" fill="#91e9d7" font-size="19" font-weight="700">数学阅读演示 · 17/19 · 来源未映射 · unverified</text>
+    <text x="32" y="109" fill="#aabbd1" font-size="14">OCR 未核验；公式保留 LaTeX 原文；不提供自动判分</text>
+    <rect x="32" y="127" width="976" height="207" rx="9" fill="#172840"/>
+    <text x="49" y="153" fill="#91e9d7">原始 OCR（未覆盖）</text>
+<text x="49" y="179" fill="#eef3fb">把 26 张卡片每 4 张装进一个信封，可以装满 6 个，还剩 2 张。余数就是完整分组之后留下的数量。</text>
+<text x="49" y="205" fill="#eef3fb"></text>
+<text x="49" y="231" fill="#91e9d7">校订记录</text>
+<text x="49" y="257" fill="#eef3fb">暂无已确认校订</text>
+<text x="49" y="283" fill="#eef3fb"></text>
+<text x="49" y="309" fill="#eef3fb">区间针对原始块的 UTF-16 字符位置，不因校订改变。</text>
+    <text x="32" y="370" fill="#91e9d7" font-size="14">本地阅读</text>
+<text x="32" y="391" fill="#b6c8dd" font-size="14">↑↓/PgUp/Dn 滚动原文与校订记录 · Esc 阅读</text>
+<text x="32" y="412" fill="#b6c8dd" font-size="14"> · 本地离线</text></g>
+</g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="590" viewBox="0 0 1040 590" role="img" aria-label="07 / 查看来源">
+<g font-family="Consolas, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans Mono CJK SC', monospace" font-size="16" xml:space="preserve">
+<g transform="translate(0 1)"><rect x="1" y="1" width="1038" height="586" rx="16" fill="#0f1b2c" stroke="#324960" stroke-width="2"/>
+    <text x="32" y="37" fill="#dce8f7" font-weight="700">07 / 查看来源</text>
+    <text x="1008" y="37" fill="#91e9d7" text-anchor="end" font-size="14">P  来源 · O  打开 PDF</text>
+    <path d="M1 53h1038 M32 504h976" stroke="#324960"/>
+    <text x="32" y="84" fill="#91e9d7" font-size="19" font-weight="700">教材来源演示 · 1/1 · PDF 2、3（跨页） · unverified</text>
+    <text x="32" y="109" fill="#aabbd1" font-size="14">OCR 未核验；公式保留 LaTeX 原文；不提供自动判分</text>
+    <rect x="32" y="127" width="976" height="363" rx="9" fill="#172840"/>
+    <text x="49" y="153" fill="#eef3fb">原页图选择：2（1–2 选择，G 打开）</text>
+<text x="49" y="179" fill="#eef3fb">PDF 物理页 2、3（跨页块，分别保留原文区间）</text>
+<text x="49" y="205" fill="#eef3fb">[0, 34) → 物理页 2 / 印刷页 1</text>
+<text x="49" y="231" fill="#eef3fb">原页图：editorial/assets/609004bcefda….png</text>
+<text x="49" y="257" fill="#eef3fb">[34, 164) → 物理页 3 / 印刷页 2</text>
+<text x="49" y="283" fill="#eef3fb">原页图：editorial/assets/cab53973ef16….png</text>
+<text x="49" y="309" fill="#eef3fb">来源记录：本次演示生成（省略 ID）</text>
+<text x="49" y="335" fill="#eef3fb">核对人：演示样例</text>
+<text x="49" y="361" fill="#eef3fb">映射依据：对照原创 PDF 两页，逐段登记来源。</text>
+<text x="49" y="387" fill="#eef3fb">核验状态：unverified（来源核对/局部校订不代表整块正确；不提供自动判分）</text>
+<text x="49" y="413" fill="#eef3fb">已确认校订：0 处</text>
+<text x="49" y="439" fill="#eef3fb">PDF：source-demo.pdf（省略本地路径）</text>
+<text x="49" y="465" fill="#91e9d7">原始 OCR：raw/legacy.md [0, 98)</text>
+    <text x="32" y="526" fill="#91e9d7" font-size="14">本地阅读</text>
+<text x="32" y="547" fill="#b6c8dd" font-size="14">↑↓ 滚动 · G 原页图 · 1–9 选页 · O PDF · I 插图 · Esc 阅读</text>
+<text x="32" y="568" fill="#b6c8dd" font-size="14"> · 本地离线</text></g>
+</g>
+</svg>

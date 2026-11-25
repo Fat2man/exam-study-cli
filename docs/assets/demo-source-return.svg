@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="330" viewBox="0 0 1040 330" role="img" aria-label="返回原阅读位置">
+<g font-family="Consolas, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans Mono CJK SC', monospace" font-size="16" xml:space="preserve">
+<g transform="translate(0 1)"><rect x="1" y="1" width="1038" height="326" rx="16" fill="#0f1b2c" stroke="#324960" stroke-width="2"/>
+    <text x="32" y="37" fill="#dce8f7" font-weight="700">返回原阅读位置</text>
+    <text x="1008" y="37" fill="#91e9d7" text-anchor="end" font-size="14">Esc  阅读</text>
+    <path d="M1 53h1038 M32 244h976" stroke="#324960"/>
+    <text x="32" y="84" fill="#91e9d7" font-size="19" font-weight="700">教材来源演示 · 1/1 · PDF 2、3（跨页） · unverified</text>
+    <text x="32" y="109" fill="#aabbd1" font-size="14">OCR 未核验；公式保留 LaTeX 原文；不提供自动判分</text>
+    <rect x="32" y="127" width="976" height="103" rx="9" fill="#172840"/>
+    <text x="49" y="153" fill="#eef3fb">26 cards, grouped into sets of 4.</text>
+<text x="49" y="179" fill="#eef3fb">Six full sets, with 2 cards remaining.</text>
+<text x="49" y="205" fill="#eef3fb">![Card groups](assets/7ed1325b8777….png)</text>
+    <text x="32" y="266" fill="#91e9d7" font-size="14">本地阅读</text>
+<text x="32" y="287" fill="#b6c8dd" font-size="14">↑↓/PgUp/Dn 翻读 · N/B 块 · C 目录 · P 来源 · R 原文 · S 搜索 · Esc 返回</text>
+<text x="32" y="308" fill="#b6c8dd" font-size="14">source-demo:legacy:0001 · 正文行 1–5/5 · 已到全书末尾 · 全书开头</text></g>
+</g>
+</svg>

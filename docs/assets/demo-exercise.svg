@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="382" viewBox="0 0 1040 382" role="img" aria-label="02 / 习题阅读">
+<g font-family="Consolas, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans Mono CJK SC', monospace" font-size="16" xml:space="preserve">
+<g transform="translate(0 1)"><rect x="1" y="1" width="1038" height="378" rx="16" fill="#0f1b2c" stroke="#324960" stroke-width="2"/>
+    <text x="32" y="37" fill="#dce8f7" font-weight="700">02 / 习题阅读</text>
+    <text x="1008" y="37" fill="#91e9d7" text-anchor="end" font-size="14">题干 / 答案 / 解析</text>
+    <path d="M1 53h1038 M32 296h976" stroke="#324960"/>
+    <text x="32" y="84" fill="#91e9d7" font-size="19" font-weight="700">数学阅读演示 · 19/19 · 来源未映射 · unverified</text>
+    <text x="32" y="109" fill="#aabbd1" font-size="14">OCR 未核验；公式保留 LaTeX 原文；不提供自动判分</text>
+    <rect x="32" y="127" width="976" height="155" rx="9" fill="#172840"/>
+    <text x="49" y="153" fill="#eef3fb">- 【例题】34 张卡片每 6 张装一盒，最多能装满几盒？还剩几张？</text>
+<text x="49" y="179" fill="#91e9d7">- 【答案】装满 5 盒，剩 4 张。</text>
+<text x="49" y="205" fill="#eef3fb">- 【解析】5 盒用掉 30 张，余下 4 张不足以再装满一盒。</text>
+<text x="49" y="231" fill="#eef3fb"></text>
+<text x="49" y="257" fill="#f3ca80">提示：来源未映射，无法定位 PDF 物理页</text>
+    <text x="32" y="318" fill="#91e9d7" font-size="14">进度自动保存 · T 重试保存</text>
+<text x="32" y="339" fill="#b6c8dd" font-size="14">↑↓/PgUp/Dn 翻读 · N/B 块 · C 目录 · P 来源 · R 原文 · S 搜索 · Esc 返回</text>
+<text x="32" y="360" fill="#b6c8dd" font-size="14">starter:legacy:0019 · 正文行 1–5/5 · 已到全书末尾</text></g>
+</g>
+</svg>
