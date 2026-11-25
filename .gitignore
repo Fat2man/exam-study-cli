@@ -1,0 +1,11 @@
+node_modules/
+dist/
+data/
+.venv/
+coverage/
+*.pdf
+*.log
+docs/snippets/
+__pycache__/
+.public-release/
+docs/local-study.md

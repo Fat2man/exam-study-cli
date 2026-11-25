@@ -1,0 +1,45 @@
+{
+  "name": "exam-study-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": { "study": "dist/cli/index.js" },
+  "engines": { "node": ">=22.16.0" },
+  "packageManager": "pnpm@10.20.0",
+  "scripts": {
+    "dev": "tsx src/cli/index.tsx",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/cli/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "eslint src tests"
+  },
+  "dependencies": {
+    "better-sqlite3": "12.4.1",
+    "commander": "14.0.2",
+    "ink": "6.3.1",
+    "pdf-lib": "1.17.1",
+    "react": "19.1.1",
+    "remark-gfm": "4.0.1",
+    "remark-math": "6.0.0",
+    "remark-parse": "11.0.0",
+    "string-width": "7.2.0",
+    "unified": "11.0.5",
+    "wrap-ansi": "9.0.2",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "7.6.13",
+    "@eslint/js": "9.39.0",
+    "@types/mdast": "4.0.4",
+    "@types/node": "22.18.12",
+    "@types/react": "19.1.16",
+    "eslint": "9.39.0",
+    "ink-testing-library": "4.0.0",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.46.3",
+    "vitest": "3.2.4"
+  },
+  "pnpm": { "onlyBuiltDependencies": ["better-sqlite3"] }
+}
