@@ -20,6 +20,7 @@ const temp = await mkdtemp(path.join(scratch, 'readme-demo-'));
 const root = path.join(temp, 'library');
 const stateFile = path.join(temp, 'state', 'progress.db');
 const output = new URL('../docs/assets/', import.meta.url);
+const scenes = [];
 
 const escapeXml = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 const frame = app => stripVTControlCharacters(app.lastFrame() ?? '')
@@ -105,6 +106,7 @@ try {
     reader.stdin.write('\r');
     const results = await waitFor(reader, 'Enter 跳转');
     assert.match(results, /2\.2 整数分组练习/);
+    scenes.push({ title: '搜到要看的内容', caption: 'S 搜索关键词 · Enter 跳转到命中的内容块', screen: results, ms: 3000 });
     await save('search', [{ title: '04 / 中文搜索结果', action: 'S  搜索「整数分组练习」', screen: results }]);
   } finally { close(reader); }
 
@@ -129,10 +131,12 @@ try {
     home.stdin.write('l');
     const resumed = await waitFor(home, '已恢复上次阅读位置');
     assert.ok(resumed.includes(blockId));
+    const resumeScene = { title: '退出后接着上次的位置读', caption: '关闭并重开 SQLite 后，L 恢复到同一个内容块', screen: resumed, ms: 3000 };
     await save('resume', [
       { title: '06A / 阅读时自动存档', action: 'Q  退出', screen: savedScreen },
       { title: '06B / 重启后回到同一块', action: 'L  继续上次阅读', screen: resumed },
     ]);
+    scenes.push(resumeScene);
   } finally { close(home); resumeSession.dispose(); reopened.close(); }
 
   const pdf = await PDFDocument.create();
@@ -185,9 +189,13 @@ try {
     assert.match(screen, /物理页 2 \/ 印刷页 1/);
     assert.match(screen, /物理页 3 \/ 印刷页 2/);
     assert.match(screen, /核验状态：unverified/);
+    scenes.splice(1, 0,
+      { title: '阅读时追到原 PDF', caption: 'P 查看来源 · 同一个内容块可以对应多个物理页', screen, ms: 4000 });
     await save('source', [{ title: '07 / 查看来源', action: 'P  来源 · O  打开 PDF', screen }]);
     source.stdin.write('2');
     const selected = await waitFor(source, '原页图选择：3');
+    scenes.splice(2, 0,
+      { title: '选中第二个来源页', caption: '按 2 选中列表的第二项 → PDF 物理页 3', screen: selected, ms: 3000 });
     await save('source-selection', [
       { title: '按键前 / 第一个来源页', action: '物理页 2', screen },
       { title: '按 2 / 选中第二个来源页', action: '物理页 3', screen: selected },
@@ -196,6 +204,11 @@ try {
     const returned = await waitFor(source, 'N/B 块');
     assert.equal(returned, reading);
     await save('source-return', [{ title: '返回原阅读位置', action: 'Esc  阅读', screen: returned }]);
+    source.stdin.write('r');
+    const original = await waitFor(source, '暂无已确认校订');
+    scenes.splice(3, 0,
+      { title: '对照原 PDF 页', caption: '这是选中的物理页 3 · 图片直接从演示 PDF 渲染', image: path.join(evidenceDir, 'page-000003.png'), ms: 4000 },
+      { title: '原始导入文本单独保留', caption: '返回阅读后按 R · 对照原始文本与校订记录', screen: original, ms: 3000 });
     const [pageTwo] = mappedBook.blocks[0].editorial.source.spans;
     const bookDir = path.join(root, 'books', 'source-demo');
     const inlineAsset = mappedBook.blocks[0].content.match(/assets\/[a-f0-9]{64}\.png/)[0];
@@ -203,6 +216,9 @@ try {
     await copyFile(path.join(evidenceDir, 'page-000001.png'), new URL('demo-source-pdf.png', output));
     await copyFile(path.join(bookDir, inlineAsset), new URL('demo-source-illustration.png', output));
   } finally { close(source); }
+  const sceneFile = path.join(temp, 'launch-scenes.json');
+  await writeFile(sceneFile, JSON.stringify(scenes));
+  execFileSync(python, ['scripts/render-launch-gif.py', sceneFile, path.join('docs', 'assets', 'launch-demo.gif')], { stdio: 'inherit' });
 } finally {
   await rm(temp, { recursive: true, force: true });
 }
